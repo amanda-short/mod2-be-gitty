@@ -19,7 +19,7 @@ describe('github route', () => {
     );
   });
 
-  it('/api/v1/github/callback should redirect logged in users to dashboard', async () => {
+  it.skip('/api/v1/github/callback should redirect logged in users to dashboard', async () => {
     const res = await request
       .agent(app)
       .get('/api/v1/github/callback?code=42')
