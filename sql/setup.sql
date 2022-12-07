@@ -2,6 +2,7 @@
 -- The SQL in this file will be executed when you run `npm run setup-db`
 DROP TABLE IF EXISTS users CASCADE;
 DROP TABLE IF EXISTS github_users;
+DROP TABLE IF EXISTS posts;
 
 CREATE TABLE users (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -17,3 +18,9 @@ CREATE TABLE github_users (
   email TEXT,
   avatar TEXT
 );
+
+CREATE TABLE posts (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  body VARCHAR NOT NULL
+);
+
