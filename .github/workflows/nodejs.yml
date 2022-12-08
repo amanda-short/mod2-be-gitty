@@ -18,10 +18,7 @@ jobs:
       - run: npm test
         env:
           CI: true
-          # DATABASE_URL: postgres://alchemy:alchemy@postgres:5432/alchemy
-          # JWT_SECRET: ${{ secrets.JWT_SECRET }}
-          # SALT_ROUNDS: ${{ secrets.SALT_ROUNDS }}
-          # COOKIE_NAME: ${{ secrets.COOKIE_NAME }}
-          # GH_CLIENT_ID: ${{ secrets.GH.REDIRECT.ID }}
-          # GH_REDIRECT_URI: ${{ secrets.GH.REDIRECT.URI }}
-          # GH_CLIENT_SECRET: ${{ secrets.GH.REDIRECT.SECRET }}
+          DATABASE_URL: postgres://alchemy:alchemy@postgres:5432/alchemy
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
+          SALT_ROUNDS: ${{ secrets.SALT_ROUNDS }}
+          COOKIE_NAME: ${{ secrets.COOKIE_NAME }}
